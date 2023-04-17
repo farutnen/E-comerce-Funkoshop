@@ -16,19 +16,30 @@
 
 <body>
     <header> <!--  INICIO HEADER-->
-        <nav>
-            <picture>
-                <img href="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkopops"></=>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkopops">
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/admin/shop.html"></a>SHOP</li>
-                <li>
-                    <a href="./pages/admin/contact.html"></a>CONTACTO</li>
-                <li>
-                    <a href="./pages/admin/login.html"></a>LOGIN</li>
-                <li>
-                    <a href="./img/icons/cart-icon.svg" alt="icono del carrito"></a>LOGIN</li>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link with-icon" href="./pages/shop/shop.html"></a>SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></li>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a class="submenu_link"></a>
+                        </li>
+                        <li class="submenu__item">
+                            <a class="submenu_link"></a>
+                        </li>
+                        <li class="submenu__item">
+                            <a class="submenu_link"></a>
+                        </li>
+                    </ul>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html"></a>CONTACTO</li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/admin/login.html"></a>LOGIN</li>
+                <li class="navbar__cart">
+                    <a href="./pages/cart/cart.html" class="nav"><img src="./img/icons/cart-icon.svg" alt="icono del carrito"></a></li>
             </ul>
         </nav>
     </header><!--  FIN HEADER-->
@@ -126,16 +137,16 @@
 </main>
 <footer>
     <section>
-        <nav>
+        <nav class="">
+            <picture>
+                <img src="./img/branding/isotype.svg" alt="Isotipo de la marca funkoshops">
+            </picture>
             <ul>
                 <li><a href="./pges/shop.html">SHOP</a></li>
                 <li><a href="./pges/register.html">REGISTRARSE</a></li>
                 <li><a href="./pges/login.html">LOGIN</a></li>
                 <li><a href="./pges/contact.html">CONTACTO</a></li>
             </ul>
-            <picture>
-                <img src="./img/branding/isotype.svg" alt="Isotipo de la marca funkoshops">
-            </picture>
         </nav>
     </section>
     <p>Todos los derechos reservados. Funkoshop</p>
@@ -143,6 +154,8 @@
 <!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+<!--iconify-->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
